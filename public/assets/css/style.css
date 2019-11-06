@@ -1,0 +1,10 @@
+.container {
+    margin-top: 5%;
+    text-align: center;
+}
+
+li, h3 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+

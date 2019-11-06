@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <img src="assets/images/burger.jpg" alt="burger" height= 100>
+            </br></br>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4">
+            <h3>Fresh Made</h3>
+            <ul>
+                {{#each burgers}}
+                    {{#unless this.devoured}}
+                        <li>
+                            <span>{{this.burger_name}}</span>
+                            <button class="btn btn-secondary btn-sm devour" data-id="{{this.id}}">Devour It!</button>
+                        </li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-4">
+            <h3>Finished</h3>
+            <ul>
+                {{#each burgers}}
+                    {{#if this.devoured}}
+                        <li>{{this.burger_name}}</li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-12"></div>
+        <div class="col-4">
+            </br></br>
+            <form>
+                <div class="form-group">
+                    <textarea id="type_burger_name" class="form-control" rows="3" placeholder="Order Your Bruger Here"></textarea>
+                    </br>
+                    <button id="order_btn" class="btn btn-danger">Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
