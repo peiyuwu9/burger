@@ -5,7 +5,7 @@ An application to mimic online order.
 Create an application to practice Handlebars, Node.js and MySQL.
 
 ## Technologies used and why
-**HTML** and **SCC** are used to build browser content.  
+**HTML** and **CSS** are used to build browser content.  
 **Handlebars** is used to interprete html files.  
 **Javascript** is used to build user server/sql connection initialization, routes setup, request/response handle and read/write sql database.  
 **Node.js** is an environment to execute javascript in terminal.  
